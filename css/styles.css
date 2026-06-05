@@ -2080,6 +2080,14 @@ button {
         width: 100% !important;
         max-width: 100% !important;
         overflow-x: hidden !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    * {
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
     }
 
     .image-slider,
