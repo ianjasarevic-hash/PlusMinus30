@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="sl" style="margin-right:0 !important; overflow-x:hidden !important; width:100vw !important; max-width:100vw !important;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Projekt | Plusminus30 d.o.o.</title>
+    <meta name="description" content="Projekt arhitekturnega studia Plusminus30 d.o.o.">
+    <link rel="stylesheet" href="css/styles.css?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-projekt" style="margin-right:0 !important; overflow-x:hidden !important;">
+        <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <img src="assets/images/logo-xl.png" alt="plusminus30" class="loader-logo">
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">plusminus30</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Odpri meni">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Domov</a></li>
+                <li><a href="projekti.html" class="nav-link active">Projekti</a></li>
+                <li><a href="studio.html" class="nav-link">Studio</a></li>
+                                <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Image -->
+    <div class="project-hero" id="projectHero">
+        <img id="heroImage" src="" alt="">
+    </div>
+
+    <!-- Project Detail Section -->
+    <section class="project-detail">
+        <div class="container">
+            <a href="projekti.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                <span>Vsi projekti</span>
+            </a>
+
+            <div class="project-detail-grid">
+                <div class="project-detail-info" data-animate="fadeUp" data-delay="200">
+                    <h1 id="detail-title"></h1>
+                    <p class="project-type" id="detail-type"></p>
+                    <p class="project-description" id="detail-description"></p>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-user"></i>
+                            <span id="detail-author"></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-building"></i>
+                            <span id="detail-client"></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span id="detail-year"></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span id="detail-status"></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="detail-location"></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-camera"></i>
+                            <span id="detail-photos"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="project-gallery-section">
+        <div class="container">
+            <div class="project-gallery-grid" id="projectGalleryGrid">
+                <!-- Images loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo"><img src="assets/images/logo-xl.png" alt="plusminus30"></div>
+                <p class="footer-text">Arhitektura, ki povezuje</p>
+                <p class="footer-address">Cankarjeva cesta 10, 1000 Ljubljana</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/plusminus30/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/plusminus30_architects/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Plusminus30 d.o.o. Vse pravice pridržane.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Make projects available globally
+        window.projectsData = {
+            'aftr': {
+                title: 'AFTR Bistro',
+                type: 'Restavracija',
+                description: 'Bistro Aftr se nahaja v centru Ljubljane na Nazorjevi ulici. Naša naloga je bila preoblikovanje interierja obstoječe restavracije z Michelinovo zvezdico v bistro. Želja investitorja je bila, ohraniti čim več obstoječe opreme ter nobenih večjih gradbenih posegov. Osnovna ideja je bila preoblikovanje notranjosti resne restavracije v bolj sproščen, manj obvezujoč in mladosten interier. Posebnost prenove je ponovna uporaba skoraj vse opreme. Na koncu pa mora glavno vlogo, tudi v interierju, še vedno imeti hrana. Tako je zaradi zelo omejenega manevrskega prostora za oblikovanje nastala zamisel o »freeze dizajnu« kjer smo z »monokrom« barvanjem vsega, kar se je nahajalo v prostoru dosegli želeno spremembo. Želja naročnika je bila tudi, da se lokal tekom dneva prelevi iz bistroja čez dan, v bolj sproščeno večerno preobleko, kjer svoje mesto dobi anche DJ. Lokal je razdeljen na tri dele, zato smo auch za glavno spremembo ambienta izbrali tri barve: modro, roza in zeleno. Glavni vhodni del kjer se nahaja prostor z največ mizami in velik točilni pult, je pobarvan modro. Na njem je možno postreči auch hrano, zvečer pa ob njem auch zaplesati. Modre barve so auch edini novi elementi pohištva - mize in stoli. Iz glavnega prostora vodi pot po hodniku do dveh manjših separejev, ki sta preoblečena v roza barvo, zadnji, bolj odmaknjen prostor pa je preoblečen v zeleno barvo. Posebnost v prostoru je avtorski grafit in neonski znak na končni prečni steni, ki je delo umetnika Leona Zuodarja, ki abstraktno ponazarja različne elemente hrane in vse kar je z njo povezano. Skupna neto površina restavracije je 150m2.',
+                author: 'plusminus30',
+                client: 'zasebni',
+                year: '2023',
+                status: 'izvedeno',
+                photos: 'Miran Kambič',
+                location: 'Ljubljana',
+                image: 'assets/images/_aftr-bistro_535.jpg',
+                gallery: [
+                    'assets/images/_aftr-bistro_535.jpg',
+                    'assets/images/_aftr-bistro_137.jpg',
+                    'assets/images/_aftr-bistro_138.jpg',
+                    'assets/images/_aftr-bistro_433.jpg',
+                    'assets/images/_aftr-bistro_435.jpg',
+                    'assets/images/_aftr-bistro_464.jpg',
+                    'assets/images/_aftr-bistro_476.jpg',
+                    'assets/images/_aftr-bistro_495.jpg',
+                    'assets/images/_aftr-bistro_544.jpg',
+                    'assets/images/_aftr-bistro_624.jpg',
+                    'assets/images/_aftr-bistro_653.jpg',
+                    'assets/images/_aftr-bistro_674.jpg',
+                    'assets/images/_aftr-bistro_72.jpg',
+                    'assets/images/_aftr-bistro_743.jpg',
+                    'assets/images/_aftr-bistro_747.jpg',
+                    'assets/images/_aftr-bistro_957.jpg'
+                ]
+            },
+            'vilabela': {
+                title: 'Vilabela Apartma in Savna',
+                type: 'Stanovanjski objekt',
+                description: 'VILABELA je ime za manjšo savno in apartma za 2 osebi, ki se nahaja v kletni etaži stanovanjske hiše v vasi Podbreže na Krasu. Savna je namenjena 2 do 4 osebam. Interier savne in apartmaja z manjšim predprostorom je minimalistično oblikovan s poudarkom na strukturi samih materialov, predvsem lesa in betona, ki v kombinaciji z intimno svetlobo nudijo obiskovalcu topel in prijeten prostor za sprostitev. V apartmaju pa za malo bolj domače vzdušje poskrbi nekaj lesenih restavriranih kosov pohištva.',
+                author: 'plusminus30',
+                client: 'zasebni',
+                year: '2022',
+                status: 'izvedeno',
+                photos: 'Nataša Segulin',
+                location: 'Izola',
+                image: 'assets/images/_vilabela-apartma-in-savna_889.jpg',
+                gallery: [
+                    'assets/images/_vilabela-apartma-in-savna_889.jpg',
+                    'assets/images/_vilabela-apartma-in-savna_96.jpg',
+                    'assets/images/_vilabela-apartma-in-savna_216.jpg',
+                    'assets/images/_vilabela-apartma-in-savna_265.jpg',
+                    'assets/images/_vilabela-apartma-in-savna_348.jpg',
+                    'assets/images/_vilabela-apartma-in-savna_372.jpg',
+                    'assets/images/_vilabela-apartma-in-savna_405.jpg',
+                    'assets/images/_vilabela-apartma-in-savna_571.jpg',
+                    'assets/images/_vilabela-apartma-in-savna_631.jpg',
+                    'assets/images/_vilabela-apartma-in-savna_653.jpg',
+                    'assets/images/_vilabela-apartma-in-savna_705.jpg',
+                    'assets/images/_vilabela-apartma-in-savna_836.jpg',
+                    'assets/images/_vilabela-apartma-in-savna_923.jpg'
+                ]
+            },
+            'repov': {
+                title: 'Gostilna Repovž',
+                type: 'Renovacija',
+                description: 'Gostilna Repovž se nahaja v vasici Šentjanž. Je gostilna z dolgoletno tradicijo. Projekt je obsegal prenovo vhodne veže in dveh jedilnic. Ključen je bil razmislek, kam umestiti točilni pult, ki je pred prenovo zasedal velik del osrednje jedilnice. Odločili smo se, da točilni pult umestimo v vežo, poleg tega pa v njej ohranimo trgovinski del, saj je predstavitev in prodaja lastnih proizvodov ključen del ponudbe domačije. Osrednja jedilnica je z odstranitvijo točilnega pulta zadihala. Ob steno smo umestili hladilne vitrine in delovni pult. V drugi jedilnici smo odstranili debelejšo steno in ogromno nedelujočo peč ki sta jedilnico delili na pol. Kot spomin na stari interier smo ohranili določene kvalitetne elemente – terazzo veneziano smo podaljšali v vežo, ostal je parket ribja kost v jedilnicah, temen lesen strop in lesene zidne obloge. Osrednji element v gostilni pa je postala krušna peč, ki smo jo obložili z več stoletij starimi litoželeznimi pečnicami okrašenimi s čudovitimi reliefi.',
+                author: 'plusminus30',
+                client: 'Družina Repovž',
+                year: '2021',
+                status: 'izvedeno',
+                photos: 'AKLIH',
+                location: 'Šmartno',
+                image: 'assets/images/_gostilna-repov-prenova_54.jpg',
+                gallery: [
+                    'assets/images/_gostilna-repov-prenova_54.jpg',
+                    'assets/images/_gostilna-repov-prenova_45.jpg',
+                    'assets/images/_gostilna-repov-prenova_69.jpg',
+                    'assets/images/_gostilna-repov-prenova_265.jpg',
+                    'assets/images/_gostilna-repov-prenova_898.jpg',
+                    'assets/images/_gostilna-repov-prenova_989.jpg'
+                ]
+            },
+            'maldives': {
+                title: 'Restavracija na Maldivih',
+                type: 'Restavracija',
+                description: 'Naloga našega arhitekturnega studia je bila izdelati idejno zasnovo za ureditev restavracije na zasebnem majhnem dvorišču enemu izmed lokalnih otokov na Maldivih. Zasnova je obsegala oblikovanje zidanega dela kuhinje s skladiščem in sanitarijami, ter nadstrešnice kot odprti del jedilnice s servirnim šankom. Ureditev vrta predstavlja čim več integriranosti v zelenju z novo klopjo za posedanje okoli obstoječega veličastnega drevesa, s postavitijo ležalnikov in jedilnih miz med palmami. Vrt, ki je v celoti iz lokalnega peska, predstavlja prostor za sproščanje ob uživanju svežih sadnih napitkov in naravnega sladoleda. Vsi deli objekta so bili izvedeni iz naravnih in lokalnih materialov, s poudarkom predvsem na lesu in tipičnem belem pesku. Pri zasnovi projekta smo upoštevali značilnosti lokalne arhitekture in izvedli objekt na sodoben, minimalen način s čim večjo funkcionalnostjo. Zaradi pomislekov lastnikov pri sami izvedbi z lokalnimi izvajalci so nas prosili, da se tudi mi kot arhitekti vključimo v samo izvedbo projekta, kar smo tudi storili in lastnoročno izvedli skoraj celoten objekt.',
+                author: 'plusminus30',
+                client: 'zasebni',
+                year: '2019',
+                status: 'izvedeno',
+                photos: '+-30',
+                location: 'Maldivi',
+                image: 'assets/images/_restavracija-na-maldivih_256.jpg',
+                gallery: [
+                    'assets/images/_restavracija-na-maldivih_256.jpg',
+                    'assets/images/_restavracija-na-maldivih_174.jpg',
+                    'assets/images/_restavracija-na-maldivih_222.jpg',
+                    'assets/images/_restavracija-na-maldivih_309.jpg',
+                    'assets/images/_restavracija-na-maldivih_397.jpg',
+                    'assets/images/_restavracija-na-maldivih_708.jpg',
+                    'assets/images/_restavracija-na-maldivih_867.jpg',
+                    'assets/images/_restavracija-na-maldivih_916.jpg',
+                    'assets/images/_restavracija-na-maldivih_954.jpg'
+                ]
+            },
+            'edisimic': {
+                title: 'Vinska klet Edi Simčič',
+                type: 'Vinarija',
+                description: 'Objekt VINSKA KLET EDI SIMČIČ obsega razširitev obstoječe dejavnosti vinske kleti, predvsem skladiščnega in pridelovalnega dela ter nov degustacijski prostor za predstavitev in pokušino vin. Objekt se nahaja v vinorodnem okolišu Goriških Brd, natančneje v Vipolžah. Zasnova objekta je prilagojena reliefnim danostim in klimatskim razmeram lokacije. Oblikovno pa se naslanja na značilnosti stavbne dediščine okolja v katerega se vključuje, predvsem na način urejanja kulturne krajine pobočij s terasiranjem z opornimi suhozidi. Objekt sestoji iz pritličja in kleti, pri čemer sta del pritličja in del kleti delno vkopana zaradi boljšega prilagajanja terenu. Streha objekta je ravna in zazelenjena, rob strehe pa poteka vzporedno s plastnicami terena. Sprednji deli objekta, ki gledajo iz terena pa so oblikovani kot oporni suhozidi. V novograjenem volumnu objekta s fasado iz kortena je večnamenski prostor za degustacije vin ter predstavitve z razdelilno kuhinjo, WC-jem in garderobo, ki se odpira na skupno teraso. Vhod v ta del objekta je po skupni dovozni rampi, nasproti obstoječe stanovanjske hiše. V nadaljevanju dovozne rampe, med objektom degustacije in obstoječo hišo ter kletjo je preko nadkrite manupulacijske vstop v prizidan del kleti s kamnito fasado, v katerem je dopolnitev pridelovalnega programa vinske kleti. Pred objektom je organizirano parkirišče za avtomobile. Pod obema volumnoma in njenima terasama oz. parkiriščem se nahaja polvkopana klet z razširitvijo skladišča vin, ostali pomožni prostori in obstoječa vinska klet. Servisni dostop do skladiščnega dela kleti je urejen preko obstoječe kmečke kolovozne poti.',
+                author: 'plusminus30',
+                client: 'Vinarstvo Edi Simčič',
+                year: '2019',
+                status: 'izvedeno',
+                photos: '+-30 in Miran Kambič',
+                location: 'Goriška brda',
+                image: 'assets/images/_edi-simi-winery_561.jpg',
+                gallery: [
+                    'assets/images/_edi-simi-winery_561.jpg',
+                    'assets/images/_edi-simi-winery_13.jpg',
+                    'assets/images/_edi-simi-winery_22.jpg',
+                    'assets/images/_edi-simi-winery_25.jpg',
+                    'assets/images/_edi-simi-winery_68.jpg',
+                    'assets/images/_edi-simi-winery_70.jpg',
+                    'assets/images/_edi-simi-winery_114.jpg',
+                    'assets/images/_edi-simi-winery_118.jpg',
+                    'assets/images/_edi-simi-winery_173.jpg',
+                    'assets/images/_edi-simi-winery_211.jpg',
+                    'assets/images/_edi-simi-winery_242.jpg',
+                    'assets/images/_edi-simi-winery_324.jpg',
+                    'assets/images/_edi-simi-winery_379.jpg',
+                    'assets/images/_edi-simi-winery_442.jpg',
+                    'assets/images/_edi-simi-winery_562.jpg',
+                    'assets/images/_edi-simi-winery_582.jpg',
+                    'assets/images/_edi-simi-winery_646.jpg',
+                    'assets/images/_edi-simi-winery_757.jpg',
+                    'assets/images/_edi-simi-winery_825.jpg',
+                    'assets/images/_edi-simi-winery_852.jpg',
+                    'assets/images/_edi-simcic-winery_149.jpg',
+                    'assets/images/_edi-simcic-winery_391.jpg'
+                ]
+            },
+            'pekarna': {
+                title: 'Pekarna 8',
+                type: 'Poslovni prostor',
+                description: 'Prostor je razdeljen na prodajni in proizvodni del, zasnova pa je takšna, da stranka že ob vstopu v prostor vidi peka, ki ustvarja kruh. Izbrani materiali so surovi in goli. Sredi izčiščenega, praznega prostora stoji pult, lesena kocka, sestavljena iz 64 recikliranih špirovcev, ki so leta in leta neuporabljeni ležali na podstrešju in čakali, da na novo zaživijo. Pult je le zravnan z vrhnje strani in naoljen z naravnim lanenim oljem.',
+                author: 'plusminus30',
+                client: 'Pekarna 8',
+                year: '2014',
+                status: 'izvedeno',
+                photos: 'Nataša Segulin',
+                location: 'Ljubljana',
+                image: 'assets/images/_pekarna-8_362.jpg',
+                gallery: [
+                    'assets/images/_pekarna-8_362.jpg',
+                    'assets/images/_pekarna-8_116.jpg',
+                    'assets/images/_pekarna-8_350.jpg',
+                    'assets/images/_pekarna-8_382.jpg',
+                    'assets/images/_pekarna-8_704.jpg',
+                    'assets/images/_pekarna-8_709.jpg',
+                    'assets/images/_pekarna-8_829.jpg',
+                    'assets/images/_pekarna-8_848.jpg'
+                ]
+            },
+            'orto': {
+                title: 'ORTO MG',
+                type: 'Zdravstveni objekt',
+                description: 'Ordinacija je oblikovana in opremljena tako, da skuša pacientom zagotoviti čim manj dolgočasno in mučno izkušnjo, tako med čakanjem kot tudi na zobozdravniškem stolu. Leseni detajli ter premišljeno izbrani kosi pohištva (luči, stoli in gugalnica) v sprejemnici, ki niso običajni v ordinacijah, v prostor vnašajo toplino in igrivost. Pri prenovi so bili ohranjeni obokani stropovi v sprejemnici in ordinaciji, kjer so dekorirani s sodobno grafiko, ki pritegne pogled sedečega pacienta. Sprejemnico in ordinacijo vizualno povezuje velika osvetljena omara, ki ustvarja večji učinek globine prostora.',
+                author: 'plusminus30',
+                client: 'ORTO MG d.o.o.',
+                year: '2016',
+                status: 'izvedeno',
+                photos: 'Mate Mioč',
+                location: 'Ljubljana',
+                image: 'assets/images/_zobozdravstvena-ordinacija-mg_49.jpg',
+                gallery: [
+                    'assets/images/_zobozdravstvena-ordinacija-mg_49.jpg',
+                    'assets/images/_zobozdravstvena-ordinacija-mg_29.jpg',
+                    'assets/images/_zobozdravstvena-ordinacija-mg_50.jpg',
+                    'assets/images/_zobozdravstvena-ordinacija-mg_98.jpg',
+                    'assets/images/_zobozdravstvena-ordinacija-mg_100.jpg',
+                    'assets/images/_orto-mg_387.jpg',
+                    'assets/images/_orto-mg_787.jpg',
+                    'assets/images/_orto-mg_895.jpg'
+                ]
+            },
+            'kranjska': {
+                title: 'Vikend v Kranjski Gori',
+                type: 'Vikend hiša',
+                description: 'V Kranjski Gori na parceli s čudovitim pogledom na hribe je že stal zelo majhen počitniški objekt, zgrajen v 70. letih. Ker je postal pretesen za šestčlansko družino so se odločili za gradnjo novega objekta. Rušeni objekt je obsegal delno vkopano klet, pritličje in mansardo, fasada kleti je bila obložena s savskimi prodniki, kot je večina opornih zidov in pritličij na tem območju, v predelu pritličja in mansarde pa so se pojavljali leseni elementi. Novograjeni objekt se po gabaritih in oblikovno naslanja na rušenega. Višina je K+P+M. Klet je skoraj v celoti vkopana, na njo pa je položen majhen montažen lesen objekt. Klet novega objekta je obložena z gabioni polnimi savskih prodnikov kot interpretacija s prodniki grajenih zidov. Interpretacija tradicionalnega načina gradnje je gotovo tudi princip montažnega lesenega objekta na trdni kamniti bazi in predvideni leseni brisoleji kot zatrep na prednji fasadi objekta.',
+                author: 'plusminus30',
+                client: 'zasebni',
+                year: '2014',
+                status: 'izvedeno',
+                photos: 'Miran Kambič',
+                location: 'Kranjska Gora',
+                image: 'assets/images/_vikend-v-kranjski-gori_510.jpg',
+                gallery: [
+                    'assets/images/_vikend-v-kranjski-gori_510.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_64.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_276.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_355.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_405.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_408.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_471.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_526.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_530.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_641.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_704.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_727.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_734.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_762.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_883.jpg',
+                    'assets/images/_vikend-v-kranjski-gori_887.jpg'
+                ]
+            },
+            'up': {
+                title: 'Univerza na Primorskem',
+                type: 'Izobraževalni objekt',
+                description: 'Univerzitetni kompleks v Kopru. Večnamenski objekt z modernimi predavalnicami in laboratoriji.',
+                author: 'plusminus30',
+                client: 'Univerza na Primorskem',
+                year: '2007',
+                status: 'izvedeno',
+                photos: 'Miran Kambič',
+                location: 'Koper',
+                image: 'assets/images/_univerza-na-primorskem_448.jpg',
+                gallery: [
+                    'assets/images/_univerza-na-primorskem_448.jpg',
+                    'assets/images/_univerza-na-primorskem_58.jpg',
+                    'assets/images/_univerza-na-primorskem_67.jpg',
+                    'assets/images/_univerza-na-primorskem_149.jpg',
+                    'assets/images/_univerza-na-primorskem_227.jpg',
+                    'assets/images/_univerza-na-primorskem_247.jpg',
+                    'assets/images/_univerza-na-primorskem_257.jpg',
+                    'assets/images/_univerza-na-primorskem_304.jpg',
+                    'assets/images/_univerza-na-primorskem_536.jpg',
+                    'assets/images/_univerza-na-primorskem_537.jpg',
+                    'assets/images/_univerza-na-primorskem_552.jpg',
+                    'assets/images/_univerza-na-primorskem_637.jpg',
+                    'assets/images/_univerza-na-primorskem_681.jpg',
+                    'assets/images/_univerza-na-primorskem_733.jpg',
+                    'assets/images/_univerza-na-primorskem_862.jpg',
+                    'assets/images/_univerza-na-primorskem_976.jpg'
+                ]
+            },
+            'mud': {
+                title: 'MUD Makeup Designory',
+                type: 'Izobraževalni center',
+                description: 'MUD je ameriški proizvajalec ličil, ki je predvsem izobraževalna ustanova, njihova maloprodajna linija pa je sekundarnega pomena. Do sedaj so poudarek dajali širitvi mreže šol, interjer trgovin pa je bil prepuščen preprodajalcem, zato so si želeli nove prepoznavne podobe, ki bi bila predpisana in poenotena za cel svet. Takoj je postalo jasno, da si naročnik želi zasnove, ki bi se razlikovala od obstoječih trgovin z ličili in bolj kot glamur izžarevala kreativnost. Skušali smo ustvariti interier, ki bi obenem izžareval energijo umetniškega ateljeja, delavnice, laboratorija ter eleganco trgovine z ličili ali kozmetičnega salona. Koncept trgovine je podrejen filozofiji podjetja, ki si je zamislilo inovativen izobraževalno prodajni koncept, zato je prostor razdeljen na tri cone, razstavno/kreativno, prodajno/družabno ter izobraževalno/delovno. Trgovina je vedno sestavljena iz perforirane stene, ki omogoča razstavljanje proizvodov in kreativno izražanje z raznimi barvnimi zatiči, elastikami, trakovi..., delovnih miz s profesionalno osvetlitvijo, kjer ob nakupu podučijo stranke o uporabi proizvodov ter prodajnega pulta, ki je hkrati namenjen tudi druženju.',
+                author: 'plusminus30',
+                client: 'Mud Slovenija d.o.o.',
+                year: '2017',
+                status: 'izvedeno',
+                photos: 'Nataša Segulin',
+                location: 'Ljubljana',
+                image: 'assets/images/_mud-makeup-designory_257.jpg',
+                gallery: [
+                    'assets/images/_mud-makeup-designory_257.jpg',
+                    'assets/images/_mud-makeup-designory_90.jpg',
+                    'assets/images/_mud-makeup-designory_105.jpg',
+                    'assets/images/_mud-makeup-designory_167.jpg',
+                    'assets/images/_mud-makeup-designory_222.jpg',
+                    'assets/images/_mud-makeup-designory_544.jpg',
+                    'assets/images/_mud-makeup-designory_727.jpg',
+                    'assets/images/_mud-makeup-designory_752.jpg'
+                ]
+            },
+            'ducal': {
+                title: 'Ducal Winery',
+                type: 'Vinarija',
+                description: 'Vinska klet se nahaja v Svečini, Občina Kungota. Investitorjeva želja je bila gradnja nove vinske kleti na parceli, kjer je stal obstoječi objekt. Na mestu obstoječega objekta, ki se ga je zaradi dotrajanosti porušilo, se je ohranila samo klet. Okoli obstoječe kleti pa se je zgradila nova, tehnično dovršena klet, ki vključuje večnamenski prostor za degustacije in predavanja, prostor za pridelavo in shranjevanje vina, negovanje vina (v stari kleti je prostor namenjen samo barique sodom) ter prostora z amforami in prostorom za zorjenje penin. Trenutno je zgrajena prva faza – vinska klet. Celoten objekt bo obsegal P+N+M, kjer je pritličje namenjeno v celoti vinski kleti, nad streho pritličja pa bo postavljen še glavni objekt z restavracijo in sobami za nočitev. Streha nad osnovnim volumnom je ravna ploščad in služi kot raven dostop do treh montažnih nastanitvenih paviljonov z konzolnim bazenom in kot terasa z dostopno ploščadjo glavnemu objektu.',
+                author: 'plusminus30',
+                oprema: 'plusminus30 in Mitja Lo Duca',
+                client: 'Mitja Lo Duca',
+                year: '2018',
+                status: 'izvedena 1. faza',
+                photos: 'Mate Mioč',
+                location: 'Svečina',
+                image: 'assets/images/_ducal-winery_742.jpg',
+                gallery: [
+                    'assets/images/_ducal-winery_742.jpg',
+                    'assets/images/_ducal-winery_153.jpg',
+                    'assets/images/_ducal-winery_224.jpg',
+                    'assets/images/_ducal-winery_248.jpg',
+                    'assets/images/_ducal-winery_312.jpg',
+                    'assets/images/_ducal-winery_382.jpg',
+                    'assets/images/_ducal-winery_479.jpg',
+                    'assets/images/_ducal-winery_491.jpg',
+                    'assets/images/_ducal-winery_690.jpg',
+                    'assets/images/_ducal-winery_884.jpg',
+                    'assets/images/_ducal-winery_903.jpg'
+                ]
+            },
+            'koper': {
+                title: 'Trg DŠD Koper',
+                type: 'Javni prostor',
+                description: 'Novi trg Dijaškega in študentskega doma v starem mestnem jedru Kopra je izjemen intimen prostor, kjer sta v sožitju preteklost in sedanjost oz. kjer se staro spogleduje z novim. Dvignjeni betonski stopničasti podij, ki je nujen za premoščanje višinske razlike vhodov v oba objekta in je umeščen med dijaški in študentski dom in romansko rotundo, deluje kot prostor druženja in miru, ali pa tudi lahko kot prireditveni oder. Stopnice in lesene klopi se dopolnjujejo in delujejo harmonično, usklajeno. Ornamentalna sodobna železna ograja je z režami prosojna, zato ne omejuje prostora, ampak ga bogati. Gre za pravi mediteranski prostor z obstoječim drevesom v središču, ki dijakom in študentom nudi senco in hlad v poletnih dneh. Le tega pa lepo dopolnjuje oljka in kamnito korito kot element tradicionalne zapuščine istrskega prostora, ki to mediteranskost še bolj poudari. Trg je večnamenski prostor, ki je lahko mirno zatočišče dijakom in študentom ali pa prostor-oder primeren za monologne gledališke predstave ali za predstavitev in branje poezije, lahko pa tudi prostor za manjši akustični koncert. Skratka gre za sodoben prečiščen minimalističen mediteranski prostor - trg.',
+                author: 'plusminus30',
+                client: 'DŠD Koper',
+                year: '2017',
+                status: 'izvedeno',
+                photos: 'Nataša Segulin, Uroš Kekuš Kleva',
+                location: 'Koper',
+                image: 'assets/images/_trg-dd-koper_63.jpg',
+                gallery: [
+                    'assets/images/_trg-dd-koper_63.jpg',
+                    'assets/images/_trg-dd-koper_50.jpg',
+                    'assets/images/_trg-dd-koper_282.jpg',
+                    'assets/images/_trg-dd-koper_343.jpg',
+                    'assets/images/_trg-dd-koper_619.jpg',
+                    'assets/images/_trg-dd-koper_763.jpg',
+                    'assets/images/_trg-dd-koper_928.jpg'
+                ]
+            },
+            'guerila': {
+                title: 'Guerila Winery',
+                type: 'Vinarija',
+                description: 'Vinarija z edinstveno arhitekturo. Naravni materiali in trajnostni pristop.',
+                author: 'plusminus30',
+                client: 'Guerila winery',
+                year: '2016',
+                status: 'idejna zasnova',
+                location: 'Goriška brda',
+                image: 'assets/images/_guerila-winery_706.jpg',
+                gallery: [
+                    'assets/images/_guerila-winery_706.jpg',
+                    'assets/images/_guerila-winery_38.jpg',
+                    'assets/images/_guerila-winery_177.jpg',
+                    'assets/images/_guerila-winery_277.jpg',
+                    'assets/images/_guerila-winery_660.jpg',
+                    'assets/images/_guerila-winery_718.jpg',
+                    'assets/images/_guerila-winery_852.jpg',
+                    'assets/images/_guerila-winery_864.jpg',
+                    'assets/images/_guerila-winery_937.jpg',
+                    'assets/images/_guerila-winery_994.jpg'
+                ]
+            },
+            'ljubljana': {
+                title: 'Stanovanje v Centru Ljubljane',
+                type: 'Stanovanje',
+                description: 'Prenova starega mestnega stanovanja. Ohranjeni originalni elementi z modernimi posegi.',
+                author: 'plusminus30',
+                client: 'zasebni',
+                year: '2019',
+                status: 'izvedeno',
+                photos: 'Mate Mioč',
+                location: 'Ljubljana',
+                image: 'assets/images/_stanovanje-v-centru-ljubljane_308.jpg',
+                gallery: [
+                    'assets/images/_stanovanje-v-centru-ljubljane_308.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_24.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_135.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_189.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_200.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_340.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_400.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_517.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_599.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_613.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_710.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_758.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_768.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_770.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_799.jpg',
+                    'assets/images/_stanovanje-v-centru-ljubljane_876.jpg'
+                ]
+            },
+            'zemono': {
+                title: 'Zemono B-Side',
+                type: 'Gostinski objekt',
+                description: 'Gostinski objekt v vinogradih. Povezava med notranjim in zunanjim prostorom.',
+                author: 'plusminus30',
+                client: 'Zemono',
+                year: '2015',
+                status: 'idejna zasnova',
+                location: 'Vipava',
+                image: 'assets/images/_zemono-bside_518.jpg',
+                gallery: [
+                    'assets/images/_zemono-bside_518.jpg',
+                    'assets/images/_zemono-bside_142.jpg',
+                    'assets/images/_zemono-bside_202.jpg',
+                    'assets/images/_zemono-bside_259.jpg',
+                    'assets/images/_zemono-bside_588.jpg',
+                    'assets/images/_zemono-bside_717.jpg',
+                    'assets/images/_zemono-bside_905.jpg'
+                ]
+            },
+            'oprema': {
+                title: 'Oprema KR',
+                type: 'Poslovni prostor',
+                description: 'Notranja oprema poslovne stavbe. Sodoben dizajn z funkcionalnimi conami.',
+                author: 'plusminus30',
+                client: 'zasebni',
+                year: '2017',
+                status: 'izvedeno',
+                photos: 'Nataša Segulin',
+                location: 'Ljubljana',
+                image: 'assets/images/_oprema-kr_778.jpg',
+                gallery: [
+                    'assets/images/_oprema-kr_778.jpg',
+                    'assets/images/_oprema-kr_246.jpg',
+                    'assets/images/_oprema-kr_490.jpg',
+                    'assets/images/_oprema-kr_628.jpg',
+                    'assets/images/_oprema-kr_642.jpg',
+                    'assets/images/_oprema-kr_705.jpg',
+                    'assets/images/_oprema-kr_938.jpg'
+                ]
+            },
+            'jela': {
+                title: 'Bar in Pisarna Jelša',
+                type: 'Bar in pisarna',
+                description: 'Idejna zasnova za ureditev bara in pisarne v Šmarjah pri Jelšah.',
+                author: 'plusminus30',
+                client: 'E-kagem d.o.o.',
+                year: '2018',
+                status: 'idejna zasnova',
+                location: 'Šmarje pri Jelšah',
+                image: 'assets/images/_bar-in-pisarna-jela_380.jpg',
+                gallery: [
+                    'assets/images/_bar-in-pisarna-jela_380.jpg',
+                    'assets/images/_bar-in-pisarna-jela_110.jpg',
+                    'assets/images/_bar-in-pisarna-jela_232.jpg',
+                    'assets/images/_bar-in-pisarna-jela_385.jpg',
+                    'assets/images/_bar-in-pisarna-jela_388.jpg',
+                    'assets/images/_bar-in-pisarna-jela_599.jpg',
+                    'assets/images/_bar-in-pisarna-jela_821.jpg',
+                    'assets/images/_bar-in-pisarna-jela_976.jpg'
+                ]
+            },
+            'divaca': {
+                title: 'Zadružni Dom Divača',
+                type: 'Javni objekt',
+                description: 'Renovacija Kulturnega doma v Divaci. Ohranjanje kulturne dediščine.',
+                author: 'plusminus30',
+                client: 'Občina Divača',
+                year: '2018',
+                status: 'idejna zasnova',
+                location: 'Divača',
+                image: 'assets/images/_zadruni-dom-divaa_733.jpg',
+                gallery: [
+                    'assets/images/_zadruni-dom-divaa_733.jpg',
+                    'assets/images/_zadruni-dom-divaa_17.jpg',
+                    'assets/images/_zadruni-dom-divaa_59.jpg',
+                    'assets/images/_zadruni-dom-divaa_74.jpg',
+                    'assets/images/_zadruni-dom-divaa_94.jpg',
+                    'assets/images/_zadruni-dom-divaa_123.jpg',
+                    'assets/images/_zadruni-dom-divaa_131.jpg',
+                    'assets/images/_zadruni-dom-divaa_142.jpg',
+                    'assets/images/_zadruni-dom-divaa_176.jpg',
+                    'assets/images/_zadruni-dom-divaa_185.jpg',
+                    'assets/images/_zadruni-dom-divaa_194.jpg',
+                    'assets/images/_zadruni-dom-divaa_210.jpg',
+                    'assets/images/_zadruni-dom-divaa_212.jpg',
+                    'assets/images/_zadruni-dom-divaa_230.jpg',
+                    'assets/images/_zadruni-dom-divaa_271.jpg'
+                ]
+            },
+            'bp': {
+                title: 'Interier BP',
+                type: 'Interior',
+                description: 'Stanovanjski interier. Oseben pristop z minimalističnimi elementi.',
+                author: 'plusminus30',
+                client: 'zasebni',
+                year: '2018',
+                status: 'izvedeno',
+                photos: 'David Hosta',
+                location: 'Ljubljana',
+                image: 'assets/images/_interier-bp_998.jpg',
+                gallery: [
+                    'assets/images/_interier-bp_998.jpg',
+                    'assets/images/_interier-bp_376.jpg',
+                    'assets/images/_interier-bp_554.jpg',
+                    'assets/images/_interier-bp_870.jpg',
+                    'assets/images/_interier-bp_882.jpg',
+                    'assets/images/_interier-bp_930.jpg',
+                    'assets/images/_interier-bp_995.jpg'
+                ]
+            }
+        };
+
+        // Load project based on URL parameter
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            const projectId = params.get('project');
+            const project = window.projectsData[projectId];
+
+            if (!project) {
+                // Redirect to projects page if no valid project
+                window.location.href = 'projekti.html';
+            }
+        });
+    </script>
+</body>
+</html>

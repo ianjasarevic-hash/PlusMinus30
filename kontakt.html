@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="sl" style="margin-right:0 !important; overflow-x:hidden !important; width:100vw !important; max-width:100vw !important;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kontakt | Plusminus30 d.o.o.</title>
+    <meta name="description" content="Kontaktirajte arhitekturni studio Plusminus30 d.o.o. - Ljubljana">
+    <link rel="stylesheet" href="css/styles.css?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-kontakt" style="margin-right:0 !important; overflow-x:hidden !important;">
+        <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <img src="assets/images/logo-xl.png" alt="plusminus30" class="loader-logo">
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">plusminus30</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Odpri meni">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Domov</a></li>
+                <li><a href="projekti.html" class="nav-link">Projekti</a></li>
+                <li><a href="studio.html" class="nav-link">Studio</a></li>
+                                <li><a href="kontakt.html" class="nav-link active">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-animate="fadeUp">Kontakt</h1>
+            <p class="page-subtitle" data-animate="fadeUp" data-delay="200">Povežite se z nami</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fadeUp">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Naslov</h4>
+                            <p>Cankarjeva cesta 10<br>1000 Ljubljana, Slovenia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefon</h4>
+                            <p><a href="tel:+38614210886">+386 (0)1 421 08 86</a></p>
+                            <p><a href="tel:+38641339069">+386 (0) 41 339 069</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@plusminus30.si">info@plusminus30.si</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Delovni čas</h4>
+                            <p>Pon-Pet: 8:00 - 16:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://www.facebook.com/plusminus30/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/plusminus30_architects/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" data-animate="fadeUp" data-delay="200">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Ime in priimek</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Email naslov</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder=" ">
+                        <label for="phone">Telefon</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required placeholder=" "></textarea>
+                        <label for="message">Sporočilo</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Pošlji sporočilo</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2768.6384225275643!2d14.5124617!3d46.0524989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47652d5e4f000001%3A0x53e3f8f3c8e8c6a0!2sCankarjeva%20cesta%2010%2C%201000%20Ljubljana%2C%20Slovenia!5e0!3m2!1ssl!2s!4v1700000000000"
+                width="100%"
+                height="450"
+                style="border:0;filter: grayscale(20%) contrast(110%) saturate(120%);"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo"><img src="assets/images/logo-xl.png" alt="plusminus30"></div>
+                <p class="footer-text">Arhitektura, ki povezuje</p>
+                <p class="footer-address">Cankarjeva cesta 10, 1000 Ljubljana</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/plusminus30/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/plusminus30_architects/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Plusminus30 d.o.o. Vse pravice pridržane.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
