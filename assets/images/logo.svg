@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" width="100%" height="100%">
+  <style>
+    .main-brand {
+      font-family: "Inter", "Montserrat", "Segoe UI", sans-serif;
+      font-size: 72px;
+      font-weight: 700;
+      fill: #ffffff;
+      text-anchor: middle;
+    }
+    .sub-brand {
+      font-family: "Inter", "Montserrat", "Segoe UI", sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      fill: #ffffff;
+      text-anchor: middle;
+      letter-spacing: 0.5px;
+    }
+  </style>
+
+  <!-- Main ±30 Graphic -->
+  <text x="150" y="90" class="main-brand">±30</text>
+
+  <!-- Subtext plusminus30 d.o.o. -->
+  <text x="150" y="122" class="sub-brand">plusminus30 d.o.o.</text>
+</svg>

@@ -17,17 +17,30 @@
     --transition-fast: 0.2s ease;
     --transition-medium: 0.3s ease;
     --transition-slow: 0.5s ease;
-    --font-primary: 'GothamRounded', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-primary: 'Calibri', -apple-system, BlinkMacSystemFont, sans-serif;
     --container-width: 1400px;
     --nav-height: 80px;
 }
 
-/* Custom Font - BenguiatGot */
+/* Custom Font - Bengothn */
 @font-face {
-    font-family: 'BenguiatGot';
-    src: url('assets/fonts/Bengotni.ttf') format('truetype');
+    font-family: 'Bengothn';
+    src: url('assets/fonts/Bengothn.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+}
+@font-face {
+    font-family: 'Bengothn';
+    src: url('assets/fonts/Bengothb.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+/* Custom Font - Bengotbi (Italic) */
+@font-face {
+    font-family: 'Bengotbi';
+    src: url('assets/fonts/Bengotbi.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
 }
 
 /* Gotham Rounded - Standard Text */
@@ -209,10 +222,9 @@ button {
 }
 
 .loader-logo {
-    max-width: 540px;
+    width: 500px;
     height: auto;
     margin-bottom: 20px;
-    object-fit: contain;
 }
 
 .loader-line {
@@ -279,7 +291,7 @@ button {
 }
 
 .logo {
-    font-family: 'BenguiatGot', serif;
+    font-family: 'Bengotbi', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 0.1em;
@@ -1312,6 +1324,66 @@ button {
     max-width: 360px;
     height: auto;
     object-fit: contain;
+}
+
+/* New Footer - noga */
+#noga_vstopna {
+    background: #2a2a2a;
+    padding: 40px 20px;
+}
+#noga_vsebina {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+#noga_logo img {
+    width: 240px;
+    height: auto;
+    margin-top: -25px;
+}
+#noga_copyright {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+}
+#noga_tel,
+#noga_gsm {
+    color: #fff;
+    font-size: 14px;
+}
+#noga_linki a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+#noga_linki a:hover {
+    text-decoration: underline;
+}
+#noga_tel i,
+#noga_gsm i {
+    margin-right: 8px;
+}
+
+/* Mobile footer */
+@media (max-width: 480px) {
+    #noga_vsebina {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    #noga_logo img {
+        width: 180px;
+        margin-top: 0;
+    }
+    #noga_linki a {
+        margin: 0 10px;
+    }
 }
 
 .footer-text {
